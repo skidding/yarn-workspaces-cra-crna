@@ -1,4 +1,4 @@
-const getWorkspaces = require('get-yarn-workspaces')
+const getWorkspaces = require('@skidding/get-yarn-workspaces')
 const path = require('path')
 
 module.exports = function rewireYarnWorkspaces(config, env, from) {
@@ -10,7 +10,9 @@ module.exports = function rewireYarnWorkspaces(config, env, from) {
     babel.include = [babel.include]
   }
 
-  babel.include = babel.include.concat(getWorkspaces(from).map((directory) => path.resolve(directory)))
+  babel.include = babel.include.concat(
+    getWorkspaces(from).map(directory => path.resolve(directory))
+  )
 
   return config
 }

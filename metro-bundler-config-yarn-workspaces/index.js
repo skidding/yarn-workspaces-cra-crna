@@ -1,5 +1,5 @@
 const blacklist = require('metro/src/blacklist')
-const getWorkspaces = require('get-yarn-workspaces')
+const getWorkspaces = require('@skidding/get-yarn-workspaces')
 const path = require('path')
 
 module.exports = function getConfig(from, options = {}) {
@@ -32,7 +32,7 @@ module.exports = function getConfig(from, options = {}) {
     getEnableBabelRCLookup() {
       // Whether Metro should pick up .babelrc configs from host project
       return options.enableBabelRCLookup || true
-    }
+    },
   }
   return config
 }

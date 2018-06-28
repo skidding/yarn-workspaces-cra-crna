@@ -1,5 +1,5 @@
 {
-  "name": "crna-make-symlinks-for-yarn-workspaces",
+  "name": "@skidding/crna-make-symlinks-for-yarn-workspaces",
   "version": "1.0.1",
   "description": "Symlink modules that Create React Native App needs when running on yarn workspaces",
   "main": "index.js",

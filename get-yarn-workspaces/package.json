@@ -1,5 +1,5 @@
 {
-  "name": "get-yarn-workspaces",
+  "name": "@skidding/get-yarn-workspaces",
   "version": "1.0.2",
   "description": "Get yarn workspaces paths relative to a project",
   "main": "index.js",
